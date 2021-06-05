@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03686D</color>
+    <color name="colorPrimaryDark">#00464E</color>
+    <color name="colorAccent">#FF7F34</color>
+    <color name="colorTextTV">#FFFFFF</color>
+    <color name="colorTextET">#dee0e0</color>
+    <color name="colorTripActive">#2a9146</color>
+</resources>

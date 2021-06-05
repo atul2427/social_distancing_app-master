@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:orientation="vertical">
+
+    <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:context="com.example.currentplacedetailsonmap.MapsActivityCurrentPlace"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maps_trip_active_textView"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="@string/maps_end_trip"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:id="@+id/maps_end_trip_button"
+            app:layout_constraintTop_toBottomOf="@+id/map" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"
+            android:fontFamily="@font/raleway_semibold" android:background="@color/colorAccent"
+            android:textColor="@color/colorTextTV" android:onClick="onEndTripClick"/>
+    <TextView
+            android:text="@string/maps_trip_active"
+            android:layout_width="413dp"
+            android:layout_height="30dp"
+            android:id="@+id/maps_trip_active_textView" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0" app:layout_constraintVertical_bias="0"
+            android:background="@color/colorTripActive" android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/colorTextTV" android:textAlignment="center" android:paddingTop="4dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
